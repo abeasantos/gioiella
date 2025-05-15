@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fdfaf6; 
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+header, footer {
+    background-color: #ce7eb6;
+    padding: 16px 0;
+    color: #fff;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #f5f6fa;
+}
+
+header > .container,
+footer > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav {
+    background-color: #ee85c4;
+    padding: 12px 0;
+    display: none;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav li a:hover {
+    color: #dcdde1;
+}
+
+.menu-hamburguer {
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu-hamburguer span {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 5px;
+    border-radius: 2px;
+}
+
+.container-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#sobre-a-loja img {
+    max-width: 400px;
+    border-radius: 12px;
+    margin-right: 24px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#carousel-imagens img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    margin-bottom: 24px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 32px;
+    color: #192a56;
+    border-left: 5px solid #119759;
+    padding-left: 12px;
+}
+
+.lista-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.lista-produtos li {
+    list-style: none;
+    width: 30%;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.lista-produtos li:hover {
+    transform: scale(1.02);
+}
+
+.lista-produtos li img {
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+.lista-produtos li h3 {
+    margin: 16px 0 8px;
+    font-size: 20px;
+    color: #2f3640;
+}
+
+.item-central {
+    margin: 0 5%;
+}
+
+.price {
+    margin: 12px 0;
+    font-size: 18px;
+}
+
+.price del {
+    color: #ccc;
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #119759;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0c7d49;
+}
+
+.form-campo {
+    margin-bottom: 16px;
+}
+
+.form-campo label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.form-campo input,
+.form-campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dcdde1;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.form-campo textarea {
+    resize: none;
+    height: 120px;
+}
+
+form {
+    max-width: 400px;
+    margin-top: 16px;
+}
+
+form button {
+    max-width: 140px;
+    margin-top: 12px;
+}
+
+footer {
+    padding: 24px 0;
+    background-color: #192a56;
+    color: #fff;
+}
+
+footer ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+
+footer li img:hover {
+    transform: scale(1.1);
+}
